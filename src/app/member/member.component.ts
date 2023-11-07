@@ -25,5 +25,6 @@ name:"youssef",
 createdDate:"12/12/12",
 cv:"lien",
 type:"teacher"},
-]
+];
+displayedColumns =["id","cin","name","createdDate","cv","type"];
 }
