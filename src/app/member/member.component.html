@@ -1,2 +1,21 @@
 <p>member works!</p>
-
+<table border="1px">
+    <tr>
+        <td>ID</td>
+        <td>CIN</td>
+        <td>name</td>
+        <td>createdDate</td>
+        <td>cv</td>
+        <td>type</td>
+    </tr>
+    <tbody>
+        <tr *ngFor="let element of dataSource">
+            <td>{{element.id}}</td>
+            <td>{{element.cin}}</td>
+            <td>{{element.name}}</td>
+            <td>{{element.createdDate}}</td>
+            <td>{{element.cv}}</td>
+            <td>{{element.type}}</td>
+        </tr>
+    </tbody>
+</table>
