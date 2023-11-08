@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GLOBAL } from './app-config';
 
 @Component({
   selector: 'app-member',
@@ -6,25 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent {
-dataSource:any[]=[
-  {id:"1234587",
-  cin:"13454645",
-name:"youssef",
-createdDate:"12/12/12",
-cv:"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-type:"teacher"},
-  {id:"5555555",
-  cin:"13454645",
-name:"youssef",
-createdDate:"12/12/12",
-cv:"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-type:"teacher"},
-  {id:"156465",
-  cin:"13454645",
-name:"youssef",
-createdDate:"12/12/12",
-cv:"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-type:"teacher"},
-];
+dataSource:any[]=GLOBAL._DB.members;
 displayedColumns =["id","cin","name","createdDate","cv","type","action"];
 }
